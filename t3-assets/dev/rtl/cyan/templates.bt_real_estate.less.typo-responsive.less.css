@@ -1,0 +1,37 @@
+
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  h1 small {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  h2 small {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  h3 small {
+    font-size: 12px;
+  }
+  h4,
+  h5,
+  h6 {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+  h4 small,
+  h5 small,
+  h6 small {
+    font-size: 12px -2px;
+  }
+}
+

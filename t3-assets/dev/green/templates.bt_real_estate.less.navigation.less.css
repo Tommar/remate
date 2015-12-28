@@ -1,0 +1,129 @@
+
+
+.t3-mainnav {
+  background: url('../../../templates/bt_real_estate/images/line-mainmenu.png') #353535 top left repeat-x;
+  border-bottom: 5px solid #76b03e;
+  height: auto;
+}
+.t3-mainnav .navbar {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.t3-mainnav .navbar-inner {
+  min-height: 40px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.t3-mainnav .navbar .nav {
+  margin: 0 0 0 154px;
+}
+.t3-mainnav .navbar .nav > li {
+  padding: 10px 0;
+}
+.t3-mainnav .navbar .nav > li:hover,
+.t3-mainnav .navbar .nav > li.active {
+  background: url('../../../templates/bt_real_estate/images/green/hover-li-megamenu.png') bottom center no-repeat;
+}
+.t3-mainnav .navbar .nav > li > a {
+  border-top: 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-right: 1px solid #6e6e6e;
+  border-left: 1px solid #252525;
+  padding: 8px 24px;
+  text-shadow: none;
+}
+.t3-mainnav .navbar .nav > li:first-child > a {
+  border-left: 0;
+}
+.t3-mainnav .navbar .nav > li > a:focus,
+.t3-mainnav .navbar .nav > li > a:hover {
+  background: none;
+  text-shadow: none;
+  outline: none;
+  color: #76b03e;
+}
+.t3-mainnav .navbar .nav > .active > a,
+.t3-mainnav .navbar .nav > .active > a:hover,
+.t3-mainnav .navbar .nav > .active > a:focus {
+  color: #76b03e;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  outline: none;
+}
+.t3-mainnav .navbar .btn-navbar {
+  float: right;
+  margin: 12px 20px 0;
+  background: url('../../../templates/bt_real_estate/images/mobi-menu-icon.png') #76b03e center center no-repeat;
+  width: 30px;
+  height: 28px;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+}
+.t3-mainnav .navbar .btn-navbar [class^="icon-"],
+.t3-mainnav .navbar .btn-navbar [class^=" icon-"] {
+  color: #fff;
+  text-shadow: none;
+}
+.t3-mainnav .dropdown .caret {
+  margin-left: 5px;
+}
+.t3-mainnav .dropdown-menu {
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.t3-mainnav .dropdown-menu li > a {
+  border-top: 1px solid #4f4f4f;
+  padding: 5px 20px;
+  text-shadow: none;
+  color: #d8d8d8;
+}
+.t3-mainnav .dropdown-menu li:first-child > a {
+  border-top: 0;
+}
+.t3-mainnav .navbar .nav > li > .dropdown-menu:before {
+  display: none;
+}
+.t3-mainnav .navbar .nav > li > .dropdown-menu:after {
+  display: none;
+}
+.t3-mainnav .dropdown-menu .disabled > a,
+.t3-mainnav .dropdown-menu .disabled > a:hover {
+  color: #575757;
+}
+.t3-mainnav .dropdown-menu .disabled > a:hover {
+  background-color: transparent;
+}
+.t3-mainnav .nav li.dropdown.open > .dropdown-toggle {
+  background: none;
+  color: #76b03e;
+}
+.t3-mainnav .nav li.dropdown.active > .dropdown-toggle,
+.t3-mainnav .nav li.dropdown.open.active > .dropdown-toggle {
+  background: none;
+  color: #76b03e;
+}
+.t3-mainnav .nav li.dropdown.open > .dropdown-toggle .caret,
+.t3-mainnav .nav li.dropdown.active > .dropdown-toggle .caret,
+.t3-mainnav .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-bottom-color: #76b03e;
+  border-top-color: #76b03e;
+}
+

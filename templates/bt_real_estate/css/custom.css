@@ -1,0 +1,7 @@
+@media (max-width: 767px) {
+	.logo-image a{
+		background: url("../images/logo-mobi.png") no-repeat center center;
+		height: 100px;
+		width: 120px;
+	}
+}

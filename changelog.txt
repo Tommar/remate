@@ -1,0 +1,51 @@
+Version 1.1.0
+
+Fixbug
+
+- Upgrade Joomla ver 3.2.0
+- Upgrade T3 Framework ver 1.4.2
+- Upgrade component BT Portfolio ver 3.0.5
+- Upgrade module BT Background SlideShow ver 2.4.4
+- Upgrade module BT Content Showcase ver 2.3.0
+- Upgrade module BT Google Maps ver 2.0.5
+- Upgrade module BT Image Gallery ver 2.1.2
+- Upgrade module BT Quick Contact ver 2.1
+- Upgrade module BT Social Login ver 1.1.4
+- Upgrade K2 ver 2.6.7
+- Upgrade BT Twitter Feeds ver 2.1
+- Fix some error of content
+
+
+================================================
+Version 1.1.1
+
+Fixbug
+
+- Upgrade T3 Framework ver 2.0.1
+- Upgrade module BT Background SlideShow ver 2.4.6
+- Fix erro user k2 descr
+- Upgrade component BT Portfolio ver 3.0.7
+- Upgrade module BT Content Showcase ver 2.3.2
+- Upgrade module BT Google Maps ver 2.0.8
+- Upgrade module BT Image Gallery ver 2.1.4
+- Upgrade module BT Portfolio Filter ver 1.0.1
+- Upgrade module BT Quick Contact ver 2.1.2
+- Upgrade module BT Social Login ver 1.1.5
+- Fix erro descr modules
+
+
+================================================
+Version 1.1.3
+- Upgrade T3v3 ver 2.1.3
+- Upgrade module BT Background SlideShow ver 2.4.7
+- Upgrade BT Fortfolio ver 3.0.8 - fig fillter portfoli
+- Upgrade K2 component ver 2.6.8
+
+================================================
+Version 2.0
+- Upgrade T3v3 ver 2.3.0
+- Update template from t3 blank 2.1.5
+- Upgrade joomla 3.3.1
+- Upgrade module BT Background SlideShow ver 2.4.10
+- Upgrade BT Fortfolio ver 3.0.9
+- Upgrade BT Content Showcase 2.4.0

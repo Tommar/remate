@@ -1,0 +1,394 @@
+
+
+.t3-header {
+  background-color: #242424;
+}
+.logo {
+  float: right;
+}
+.logo h1,
+.logo h1 a {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+}
+.logo-image {
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+}
+.logo-image a {
+  background-image: url("../../../../templates/bt_real_estate/images/red/logo.png");
+  background-repeat: no-repeat;
+  width: 153px;
+  height: 173px;
+}
+.logo-image span,
+.logo-image small {
+  display: none;
+}
+.logo-text h1 {
+  color: #6e6e6e;
+}
+.logo-text h1 a {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+.logo-text:hover h1 a,
+.logo-text h1 a:hover,
+.logo-text h1 a:active,
+.logo-text h1 a:focus {
+  text-decoration: none;
+}
+.logo-text .site-slogan {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.head-search {
+  float: left;
+  margin-top: 0;
+}
+.head-search form {
+  margin: 0;
+  float: left;
+}
+.head-search form .search,
+.head-search form .finder {
+  background-color: #fff;
+  border-top: 4px solid #4e4e4e;
+  padding: 20px 10px;
+  display: none;
+}
+.head-search form .button {
+  background: url(../../../../templates/bt_real_estate/images/red/botton-search-rtl.png) top right no-repeat;
+  width: 29px;
+  height: 30px;
+  text-indent: 40px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+  float: left;
+}
+.head-search form .finder input {
+  background: #fcfcfc;
+  border: 1px solid #dadada;
+  border-radius: 0;
+  width: 196px;
+  padding-right: 4px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  height: 22px;
+  box-shadow: none;
+}
+.head-search form .finder input:focus {
+  color: #9c9c9c;
+}
+.head-search label {
+  display: none;
+}
+.head-search .input {
+  background: #fcfcfc;
+  border: 1px solid #dadada;
+  border-radius: 0;
+  width: 196px;
+  padding-right: 4px;
+  box-shadow: none;
+  height: 22px;
+  margin-left: 5px;
+}
+.head-search .input:focus {
+  color: #9c9c9c;
+}
+.t3-sl {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.t3-mainbody {
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+.t3-footer {
+  background: #353535;
+  color: #8a898a;
+  *zoom: 1;
+}
+.t3-footer:before,
+.t3-footer:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.t3-footer:after {
+  clear: both;
+}
+.t3-footer small {
+  display: block;
+  font-size: 100%;
+}
+.t3-footer a {
+  color: #a42f2f;
+}
+.t3-footer a:hover,
+.t3-footer a:active,
+.t3-footer a:focus {
+  color: #e7e7e7;
+}
+.t3-footnav {
+  padding: 24px 0 0;
+  *zoom: 1;
+}
+.t3-footnav:before,
+.t3-footnav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.t3-footnav:after {
+  clear: both;
+}
+.t3-footnav form {
+  margin-bottom: 0;
+}
+.t3-footnav ul {
+  list-style: none;
+  margin-right: 0;
+}
+.t3-footnav li {
+  line-height: 24px;
+}
+.t3-footnav .module-title {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.t3-copyright {
+  border-top: 1px solid #474747;
+  background-color: #242424;
+  padding: 24px 0;
+  color: #fff;
+  *zoom: 1;
+}
+.t3-copyright:before,
+.t3-copyright:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.t3-copyright:after {
+  clear: both;
+}
+.copyright {
+  float: right;
+}
+.poweredby {
+  float: left;
+  text-align: left;
+}
+
+html[dir="rtl"] #btl {
+  float: left;
+}
+html[dir="rtl"] .btl-content-block {
+  text-align: right;
+}
+html[dir="rtl"] .btl-content-block h3 {
+  padding: 3px 19px 0 0 !important;
+}
+html[dir="rtl"] #btl-content-login ul {
+  text-align: right;
+}
+html[dir="rtl"] #bt_ul li a {
+  padding: 0 12px 0 0 !important;
+}
+html[dir="rtl"] #btl-content-login #social-connect div {
+  margin-right: 18px;
+  margin-left: 0;
+}
+html[dir="rtl"] #btl .btl-panel > #btl-panel-profile {
+  background-position: left top;
+  padding-right: 12px;
+  padding-left: 30px;
+}
+html[dir="rtl"] .t3-module.module_portfolio_filter .module-inner {
+  float: left;
+}
+html[dir="rtl"] .t3-module.module_portfolio_filter .module-title {
+  background: url("../../../../templates/bt_real_estate/images/red/bt-portfolio-filter-rtl.png") no-repeat top left;
+}
+html[dir="rtl"] .filter-button {
+  background: url('../../../../templates/bt_real_estate/images/red/bt-portlio-search-rtl.png') top left no-repeat;
+}
+html[dir="rtl"] #cp-caption-inner {
+  text-align: right;
+}
+html[dir="rtl"] .mid-content .box-inner.icon2,
+html[dir="rtl"] .mid-content .box-inner.icon3 {
+  background-position: right 15px top 35px;
+}
+html[dir="rtl"] .defaultLayout #btcontentshowcase-control {
+  left: 10px;
+  right: auto;
+}
+html[dir="rtl"] .defaultLayout .bt-inner .bt-introtext {
+  padding-right: 10px;
+  padding-left: 0;
+}
+html[dir="rtl"] .module_feature .defaultLayout .bt-inner .bt-introtext {
+  border-right: 2px solid #FFFFFF;
+  border-left: 0;
+}
+html[dir="rtl"] .bt-contentshowcase .price {
+  float: right;
+}
+.module_feature .defaultLayout .swap-bt-price {
+  background: url("../../../../templates/bt_real_estate/images/read-more-l1-rtl.png") no-repeat scroll right top transparent;
+}
+.module_feature .defaultLayout .bt-price {
+  background: url("../../../../templates/bt_real_estate/images/read-more-r1-rtl.png") no-repeat scroll left top transparent;
+}
+html[dir="rtl"] .module_feature .icon-feature {
+  background: url("../../../../templates/bt_real_estate/images/b-module-feature-rtl.png") no-repeat left bottom !important;
+  float: left;
+  margin-right: 0;
+  margin-left: 3px;
+}
+html[dir="rtl"] .btqc-field-container input.button {
+  padding-right: 34px;
+  padding-left: 14px;
+  float: left;
+}
+html[dir="rtl"] .module_gallery .module-ct {
+  margin-right: -14px;
+  margin-left: 0;
+}
+html[dir="rtl"] .btp-item-content-top {
+  padding-left: 0;
+  padding-right: 8px;
+}
+html[dir="rtl"] .extrafield-row td:first-child {
+  padding: 0 12px 0 0;
+}
+html[dir="rtl"] .btp-slideshow {
+  float: right;
+  padding-right: 0;
+  padding-left: 15px;
+}
+html[dir="rtl"] .btp-detail .extrafield-row-inner .extrafield-title {
+  background: url("../../../../templates/bt_real_estate/images/icon-li-rtl.png") no-repeat right center rgba(0,0,0,0);
+  padding-right: 18px;
+  padding-left: 3px;
+  float: right;
+}
+html[dir="rtl"] .btp-direction {
+  float: left;
+}
+html[dir="rtl"] .imgUseravatar {
+  float: right;
+  margin: 0 0 0 14px;
+}
+html[dir="rtl"] .itembasicinfo {
+  display: inline-block;
+  width: 100%;
+}
+html[dir="rtl"] .itembasicinfo span {
+  float: right;
+  margin-left: 4px;
+}
+html[dir="rtl"] div.tagItemImageBlock {
+  float: right;
+}
+html[dir="rtl"] .catItemImageBlock,
+html[dir="rtl"] div.latestItemImageBlock,
+html[dir="rtl"] span.tagItemImage,
+html[dir="rtl"] div.userItemImageBlock {
+  float: right;
+  margin: 0 0 0 24px;
+}
+html[dir="rtl"] span.catItemImage {
+  float: right;
+}
+html[dir="rtl"] div.itemImageBlock {
+  float: right;
+  margin-left: 27px;
+  margin-right: 0;
+}
+html[dir="rtl"] div.itemToolbar ul {
+  text-align: left;
+}
+html[dir="rtl"] div.itemToolbar ul li {
+  border-right: 1px solid #CCCCCC;
+  border-left: 0;
+  padding: 0 8px 0 4px;
+}
+html[dir="rtl"] div.itemFacebookButton {
+  float: right;
+  margin-right: 0;
+  margin-left: 24px;
+}
+html[dir="rtl"] div.itemTwitterButton {
+  float: right;
+  margin: 2px 0 0 24px;
+}
+html[dir="rtl"] .itemImage .modal {
+  margin-right: 0;
+}
+html[dir="rtl"] div.itemRelated ul li,
+html[dir="rtl"] div.itemAuthorLatest ul li {
+  background: url("../../../../templates/bt_real_estate/images/icon-li-itemauthorlatest-rtl.png") no-repeat scroll right 12px rgba(0,0,0,0);
+  padding: 0 17px 0 0;
+}
+html[dir="rtl"] div.itemAuthorLatest ul li:hover,
+html[dir="rtl"] div.itemRelated ul li:hover {
+  background: url("../../../../templates/bt_real_estate/images/red/icon-li-itemauthorlatest-hover-rtl.png") no-repeat scroll right 12px rgba(0,0,0,0);
+}
+html[dir="rtl"] div.itemComments ul.itemCommentsList li img {
+  float: right;
+  margin: 7px 0 0 26px;
+}
+html[dir="rtl"] div.latestItemReadMore,
+html[dir="rtl"] div.catItemReadMore,
+html[dir="rtl"] div.userItemReadMore,
+html[dir="rtl"] div.tagItemReadMore {
+  padding-right: 15px;
+  padding-left: 0;
+}
+html[dir="rtl"] div.latestItemReadMore a,
+html[dir="rtl"] div.catItemReadMore a,
+html[dir="rtl"] div.userItemReadMore a,
+html[dir="rtl"] div.tagItemReadMore a {
+  padding: 0 0 0 15px;
+}
+html[dir="rtl"] div.latestItemReadMore:hover,
+html[dir="rtl"] div.catItemReadMore:hover,
+html[dir="rtl"] div.userItemReadMore:hover,
+html[dir="rtl"] div.tagItemReadMore:hover {
+  background-position: right -39px;
+}
+html[dir="rtl"] div.latestItemReadMore:hover a,
+html[dir="rtl"] div.catItemReadMore:hover a,
+html[dir="rtl"] div.userItemReadMore:hover a,
+html[dir="rtl"] div.tagItemReadMore:hover a {
+  background-position: left -39px;
+}
+html[dir="rtl"] .btp-submit-comment span,
+html[dir="rtl"] span.bt_buttom {
+  padding-right: 12px;
+  padding-left: 0;
+}
+html[dir="rtl"] .btp-submit-comment span button,
+html[dir="rtl"] span.bt_buttom button {
+  padding: 0 3px 0 16px;
+}
+html[dir="rtl"] .btp-submit-comment span:hover,
+html[dir="rtl"] span.bt_buttom:hover {
+  background-position: right -39px;
+}
+html[dir="rtl"] .btp-submit-comment span:hover button,
+html[dir="rtl"] span.bt_buttom:hover .button,
+html[dir="rtl"] span.bt_buttom .button:focus,
+html[dir="rtl"] span.bt_buttom .button:hover {
+  background-position: left -39px !important;
+}
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>BT Quick Contact</name>
+    <author>Bowthemes</author>
+    <creationDate>July 2012</creationDate>
+    <copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@bowthemes.com</authorEmail>
+    <authorUrl>www.bowthemes.com</authorUrl>
+    <version>2.1.3</version>
+    <description>
+	<![CDATA[		
+		<div class="bt_description">
+			<h3>Module BT Quick Contact Version 2.1.3</h3>
+			<a href="http://bowthemes.com/bt-quick-contact.html" target="_blank"><img src="../modules/mod_btquickcontact/admin/images/quick-contact-icon.png"></a>
+			<p align="justify">
+                            BT Quick Contact is custom contact form allow you creating and displaying form as light box or module position. It allow you create unlimited custom fields with all types and support multi-step forms...
+			</p>
+			<br clear="both" />
+			<h3>Extension features:</h3>
+			<ul class="list-style">
+                            <li>Support 2 types : Popup and Module position</li>
+                            <li>Standard fields: name, email, phone, message, agree to rules</li>
+                            <li>Setting almost all fields as required or not</li>
+                            <li>Setting almost all fields as required or not</li>
+                            <li>Unlimited fields and Unlimited forms on page</li>
+                            <li>Support Multi-step forms with progress bar</li>
+                            <li>Name and email auto fill when logged in</li>
+                            <li>Sending copy of email to sender</li>
+                            <li>Custom email subject</li>
+                            <li>Custom success message</li>
+                            <li>Page redirect to URL or menu item after sending email</li>
+                            <li>Joomla native JavaScript validation with AJAX submit</li>
+                            <li>Captcha anti-spam function support</li>
+                            <li>Easy and friendly back-end administration</li>
+                            <li>Compatible with Joomla 2.5 and Joomla 3.x
+                            <li>Fully compatible: Firefox, IE7+, Opera 9.5, Safari, Netscape, Google Chrome, Camino, Flock 0.7+.</li>
+                            <li>Video tutorials and forum support provided</li>
+			</ul>
+                        <h3>Tip for using</h3>
+                        <ul class="list-style">
+                            <li>In Popup type, you can put this anchor <br/>&lt;a href=&quot;#&quot; class=&quot;bt-quick-contact&quot; rel=&quot;module_id&quot;&gtSome text&lt/a&gt <br/> to open contact form.</li>
+                            <li>Or use ID of any HTML elements on your site to do that with "HTML Element Id" param</li>
+                        </ul>
+			<h3>Upgrade versions</h3>
+			<p>
+				Your current versions is BT Quick Contact 2.1.3 <a target="_blank" href="http://bowthemes.com/bt-quick-contact.html">Find our latest versions now</a>
+			</p>
+			
+			<h3>About bow themes & copyright</h3>
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright © 2012 http://bowthemes.com
+		</div>
+		<style>
+			.bt_description{
+				text-align: left;
+			}
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 10px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				padding: 5px 5px 5px 30px;
+				list-style: none outside none;
+			}
+
+			.bt_description ul.list-style li{
+				background:url(../modules/mod_btquickcontact/admin/images/tick.png) 0px 6px no-repeat;
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+	]]>
+    </description>
+    <files>
+        <filename module="mod_btquickcontact">mod_btquickcontact.php</filename>
+        <filename>index.html</filename>
+        <folder>admin</folder>
+        <folder>assets</folder>
+        <folder>helpers</folder>
+        <folder>tmpl</folder>
+        <folder>files</folder>
+        <folder>languages</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.mod_btquickcontact.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_ADMIN_MENU" />
+    <config>
+        <fields name="params" >
+            <fieldset name="basic" label = "BASIC_OPTIONS" addfieldpath="/modules/mod_btquickcontact/admin/formfields">
+                <field name="admin_email" type="text" default="" label="ADMIN_EMAIL" description="ADMIN_EMAIL_DESC" path="modules/mod_btquickcontact/admin/" />
+               	<field name="sender" type="list" default="config" label="SENDER" description="SENDER_DESC" >
+                    <option value="config">SENDER_SERVER</option>
+                    <option value="user">SENDER_USER</option>
+                </field>
+			   <field name="subject" type="text" default="" label="SUBJECT" description="SUBJECT_DESC" path="modules/mod_btquickcontact/admin/"/>
+                <field name="captcha" type="plugins" folder="captcha" default="" label="CAPTCHA" description="CAPTCHA_DESC" filter="cmd" >
+                    <option value="">JOPTION_USE_DEFAULT</option>
+                    <option value="0">JOPTION_DO_NOT_USE</option>
+                </field>
+                <field name="form_type" class="bt_control" type="list" default="module" label="FORM_TYPE" description="FORM_TYPE_DESC">
+                    <option value="module">FORM_TYPE_MODULE</option>
+                    <option value="popup">FORM_TYPE_POPUP</option>
+                </field>
+                <field name="show_feedback" default="1" type="radio" class="btn-group form_type_popup" label = "SHOW_FEEDBACK_BUTTON" description = "SHOW_FEEDBACK_BUTTON_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="width" type="text" default="auto" label="WIDTH" description="WIDTH_DESC"/>
+                <field name="height" type="text" default="auto" label="HEIGHT" description="HEIGHT_DESC"/>
+                <field name="layout" type="btlayout" default="default" label="LAYOUT" description="LAYOUT_DESC"/>
+                <field name="send_copy" type="radio" class="btn-group" default="0" label="SEND_COPY" description="SEND_COPY_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="thank_message" type="textarea" default="Thanks for your message" label="THANK_MESSAGE" description="THANK_MESSAGE_DESC"/>
+                <field name="redirect_url" type="text" default="" label="REDIRECT_URL" description="REDIRECT_URL_DESC"/>  
+                <field name="html_element_id" type="text" default="" label="HTML_ELEMENT_ID" description="HTML_ELEMENT_ID_DESC"/>  
+                <field name="progress_bar" type="radio" class="btn-group" default="1" label="PROGRESS_BAR" description="PROGRESS_BAR_DESC">  
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+				<field name="pre_text" type="textarea" default="" label="PRE_TEXT" description="PRE_TEXT_DESC" filter="raw"/>
+				<field name="post_text" type="textarea" default="" label="POST_TEXT" description="POST_TEXT_DESC" filter="raw"/>
+            </fieldset>
+            <fieldset name="manage" label = "MANAGE_FIELDS">
+                <field type="btfields" name="fields" label="" description=""/>
+            </fieldset>
+            <fieldset name="advance" label = "ADVANCE_OPTIONS">
+                <field name="module_class_suffix" type="text" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESC"/>
+				<field name="cache" type="hidden" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

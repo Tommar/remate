@@ -1,0 +1,156 @@
+.mod_btimagegallery {
+    width: 100%;
+    position: relative;
+    border: none;
+    display: inline-block;
+}
+
+.mod_btimagegallery a:hover {
+    background-color: #fff;
+    color: #363636;
+}
+.mod_btimagegallery h3 {
+    color: #d67901;
+    line-height: 37px;
+    text-indent: 15px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #cfcfcf;
+    margin: 0 !important;
+}
+
+/*
+        Next/prev buttons
+*/
+.jcarousel-wrapper{
+	position:relative;
+}
+.mod_btimagegallery .next,.mod_btimagegallery .prev {
+    display: block;
+    width: 10px;
+    height: 100%;
+	cursor:pointer;
+    text-indent: -9999px;
+    position:absolute;
+    z-index:999 !important;
+	top:0;	
+}
+.mod_btimagegallery .next {
+    background:url(../images/re-right.png) no-repeat center center !important;
+    right: -15px;
+	display:none;
+}
+.mod_btimagegallery .next:hover {
+    background:url(../images/re-right-hover.png) no-repeat center center !important;
+}
+.mod_btimagegallery .prev {
+    background:url(../images/re-left.png) no-repeat center center !important;
+    left: -15px;
+	display:none;
+}
+.mod_btimagegallery .prev:hover {
+    background:url(../images/re-left-hover.png) no-repeat center center!important;
+}
+.mod_btimagegallery .pagination{
+    border: 1px solid red;
+    position: absolute !important;
+    margin:  0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+	top:5px;
+	right:5px;
+    z-index:999;
+}
+
+.mod_btimagegallery .pagination li {
+    float: left;
+    margin: 0 1px !important;
+    list-style: none;
+    padding:0px !important;
+}
+
+.mod_btimagegallery .pagination li a {
+    display: block !important;
+    width: 12px;
+    height: 0;
+    padding-top: 12px;
+    background: url(../images/pagination.png) transparent 0 0 no-repeat !important;
+    float: left;
+    overflow: hidden;
+}
+.mod_btimagegallery .pagination li a:active,.mod_btimagegallery .pagination li a:hover {
+    background: url(../images/pagination.png) transparent 0 0 no-repeat !important;
+}
+
+.mod_btimagegallery .pagination li.current a,.mod_btimagegallery .pagination li a:focus {
+    background: url(../images/pagination.png) transparent !important;
+    background-position: 0px -12px !important;
+}
+
+.mod_btimagegallery .jcarousel-item a:hover{
+    text-decoration: none !important;
+    background: transparent !important;
+}
+
+.mod_btimagegallery .jcarousel-item a{
+    display: block;
+    position: relative;
+    float: left;
+}
+.mod_btimagegallery .jcarousel-item a.lastCol{
+    margin-right: 0px;
+}
+.mod_btimagegallery .jcarousel-item a img{
+    display: block;
+
+}
+.mod_btimagegallery .btig-overlay{
+    background: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.mod_btimagegallery .pagination a{
+    background-image: url("../images/bullet.png");
+    background-color: transparent !important;
+    background-position: 0 0;
+    display: block !important;
+    float: right;
+    height: 12px;
+    overflow: hidden;
+    width: 12px;
+    text-indent: 9999px;
+    margin: 0px 1px;
+	padding:0;
+	border:none;
+}
+.mod_btimagegallery .pagination a:hover,
+.mod_btimagegallery .pagination a.current{
+    background-position: 0 12px;
+}
+.mod_btimagegallery .pagination a{
+    text-decoration: none !important;
+}
+.imageicon{
+	position:relative;
+}
+.icon{
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url("../images/video.png") center center no-repeat;
+	position:absolute;
+	opacity:0.5;
+}
+.iconhover{
+	z-index:99;
+	opacity:1;
+}
+.btloading{
+	height: 70px;
+	background: url(../images/loading.gif) no-repeat center center;
+}

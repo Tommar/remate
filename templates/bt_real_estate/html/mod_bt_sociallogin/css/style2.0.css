@@ -1,0 +1,465 @@
+#btl-content-login #social-connect div{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 18px;
+	font-family:'Open Sans',sans-serif;
+}
+#btl-content-login #social-connect ul {
+ margin: 0 !important;	
+ padding:0;
+}
+#btl-content-login #social-connect li{
+	float: left;
+	list-style: none;
+	margin:15px 5px 20px;
+	padding:0;
+}
+#btl-content-login #social-connect li#bt-facebook{
+	margin-left:20px;
+}
+#btl-content-login #social-connect li#bt-twitter{
+	margin-right:20px;
+}
+#btl-content-login #social-connect img{
+	box-shadow:none;
+	border-radius:0;
+}
+#btl-content-login #social-connect  a:hover img{
+}
+#btl-content-login #social-connect  a{
+	text-decoration: none!important;
+}
+#btl-content-login .spacer{
+	height:14px;
+}
+#btl-content-login #social-connect  a:HOVER,#btl-content-login #social-connect  a:ACTIVE,#btl-content-login #social-connect  a:FOCUS{
+	text-decoration: none!important;
+	background-color: transparent !important;
+}
+/* Overlay , enable it if display in header, and header{over-flow:hidden;} */
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container{
+	width:400px;
+	height:400px;
+}
+.simplemodal-wrap{
+	overflow:visible!important;
+}
+#simplemodal-container a.modalCloseImg {background:url(../images/close_bt.png) top no-repeat; width:26px; height:26px; display:inline; z-index:3200; position:absolute; top:6px; right:10px; cursor:pointer;}
+#simplemodal-container a.modalCloseImg:hover {background:url(../images/close_bt.png) bottom no-repeat; width:26px; height:26px; display:inline; z-index:3200; position:absolute; top:6px; right:10px; cursor:pointer;}
+
+.btl-content-block{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0;
+	border-top:4px solid #4E4E4E;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+    display: none;
+    height: auto;
+    overflow: hidden;
+    text-align: left;	
+	font-size:12px;
+	position:relative;
+	margin-top:-3px;
+}
+.btl-content-block form{
+	margin:0 0 10px;
+	padding:0 0 5px;
+	border-bottom:1px solid #e4e4e4;
+}
+.btl-content-block .invalid{
+	color: #9D261D;
+    font-weight: bold;
+}
+.btl-content-block h3{
+	background: none;
+	border-bottom:1px solid #e4e4e4;	
+    font-weight: bold;
+	line-height: 35px;
+	margin:0px;
+    padding: 3px 0px 0px 19px!important;
+	text-transform: uppercase;
+	font-size:15px;
+}
+.btl-input > input[type=text],
+.btl-input > input[type=email],
+.btl-input > input[type=password],
+#recaptcha > input{
+    border: 1px solid #dadada;
+    border-radius:0;
+    margin: 5px 0;   
+    text-indent: 5px;
+    height: 28px;
+	padding:0;
+	width: 98%;
+	box-shadow: none; 
+}
+.btl-input > textarea{
+	width: 97%;
+	border: 1px solid #dadada;
+    border-radius:0;
+    margin: 5px 0;   
+    text-indent: 5px;
+}
+.btl-input > input:focus,
+.btl-input > textarea:focus,
+#recaptcha > input:focus{
+	border-color: #E9322D;
+    box-shadow: 0 0 6px #F8B9B7;
+}
+#recaptcha span#btl-captcha-reload{
+	display: inline-block;
+	width: 16px; height: 16px;
+	background: url('../images/reload.png') no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+#btl{
+	position:relative;
+	float:right;
+}
+#btl .btl-panel{
+	overflow:hidden;
+	
+}
+#btl .btl-panel > #btl-panel-profile{
+	background:url(../images/btl-panel-bg.png) top right no-repeat;
+	padding-right:30px;
+}
+button::-moz-focus-inner {
+padding:0; border: none;
+}
+#btl .btl-panel > span{
+	display:inline-block;
+	line-height:28px;
+	padding:5px 12px;
+	cursor:pointer;
+	text-indent: 0!important;
+	width: auto;	
+}
+#btl-input-remember input{
+	margin-top:0;
+	margin-right:5px;
+}
+#btl .btl-panel > span{
+	margin:0;
+	box-shadow: none;
+	color:#fff;
+}
+#btl .btl-panel > span:hover{
+	background:url('../images/shadow-login.png') bottom center repeat-x;
+}
+#btl .btl-panel > span,button.btl-buttonsubmit,input.btl-buttonsubmit{
+	border-radius:0;
+}
+#btl .btl-panel > span.active,#btl .btl-panel > span:hover,button.btl-buttonsubmit:focus,input.btl-buttonsubmit:focus{	
+}
+.btl-error{
+	display:none;	
+}
+.btl-error-detail{
+	display:none;
+	float: right;
+	color: #FF0000;
+	margin-bottom:4px;
+}
+.btl-field,#register-link,.btl-error-detail,.btl-error,.btl-note{
+	margin: 5px 20px 5px 20px !important;
+	overflow:hidden;
+}
+ .btl-label{
+	float:none!important;
+}
+ .btl-input{
+	float:none!important;
+}
+
+#jform_profile_dob_img{
+	margin-top: 5px;	
+}
+#recaptcha{
+	height: auto!important;
+	float:right;
+}
+#btl-content-login .btl-input input{
+	width: 99%;
+	background-color:#fcfcfc;
+}
+#btl-input-remember{
+	margin-bottom:5px;
+	height: 20px;
+}
+#btl-checkbox-remember{
+	width: 15px!important;
+}
+.clear{
+	clear:both;
+}
+.btl-error{
+	color: #FF0000;
+}
+input.btl-buttonsubmit,
+button.btl-buttonsubmit{
+    border:none!important;
+    cursor: pointer;
+    text-align: center!important;
+    width: auto!important;
+	padding:0 18px;
+	font-size:15px;
+	text-transform: uppercase;
+	height:29px!important;;
+	line-height:29px!important;;
+	display:inline-block;
+	border-radius:20px;
+	margin-top:10px;
+}
+div.btl-buttonsubmit{
+	margin:0px 25px 13px 18px;
+}
+#btl-content > .btl-content-block{
+	position:absolute!important;
+	z-index:999;
+}
+.btl-note,#register-link{
+	padding:12px 0px;
+}
+
+ #btl-content-login .btl-input{
+	float:right;
+}
+
+#btl-content div.btl-buttonsubmit{
+	
+}
+#btl-content #btl-content-login .btl-label {
+	line-height:24px;
+	margin-top:5px;
+	min-width: 0px!important;
+	font-weight:bold;
+}
+
+/* CSS FOR USER PROFILE MODULE**/
+#btl-content  #btl-content-profile{
+	overflow:hidden;
+}
+#btl-content  #btl-content-profile #module-in-profile>div{
+	min-width:200px;
+}
+#btl-content #btl-content-profile #module-in-profile ul{
+	position: static;	
+	text-align: left;
+	margin: 0 0 0 15px;
+	padding: 0!important;
+	
+}
+#btl-content-profile ul.menu li {
+    background: url("../images/bullet.png") no-repeat scroll 5px 15px transparent;
+    padding: 0 0 0 20px!important;
+	border-bottom: 1px solid #E8E8E8;
+	display:list-item!important;
+    line-height: 37px;
+	
+}
+#btl-content #btl-content-profile #module-in-profile ul li a{
+	color: #6b6b6b;
+	text-decoration: none !important;
+	text-transform: none!important;
+	font-family: arial,tahoma;
+}
+
+#btl-content-profile ul.menu li a {
+    color: #616161!important;
+	text-decoration:none!important;
+	border:none!important;
+	background:none!important;
+	display:inline!important;
+	padding:0!important;
+	margin:0!important;
+	text-transform: none!important;
+}
+#btl-content-profile div.btl-buttonsubmit{
+	clear:both;
+	margin-bottom:15px;
+	border: none!important;
+	text-align: center;
+	margin-top: 0!important;
+	
+}
+/* style panel when action process */
+#btl-register-in-process,#btl-login-in-process{
+	display: none;
+	background: url("../images/loading.gif") no-repeat #000 50%;
+	opacity: 0.4;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 9999;
+	top:-1px;
+	left:-1px;
+	padding-top:1px;
+	padding-left:1px;
+}
+
+/* style panel when register success */
+#btl-success{
+	display: none;
+	margin: 20px 0 30px 0;
+	background:url("../images/notice-info.png") no-repeat;
+	display: none;
+	color:#000;
+	border-bottom: 2px solid #90B203;
+	border-top: 2px solid #90B203;
+	font-size:14px;
+	padding: 10px 10px 10px 25px;
+}
+/* style for ul in login panel*/
+#bt_ul{
+	margin-bottom:10px!important;
+	margin-left: 20px;
+	list-style: none;
+}
+
+/* for modal*/
+#btl-content-login ul{
+	position: static!important;	
+	text-align: left;
+}
+#btl-content-login ul li{
+	margin-top: 7px;
+}
+#bt_ul li a{
+	padding: 0 0 0 12px !important;	
+	color:#545454;
+}
+#bt_ul li:hover a{
+	text-decoration: none;
+}
+#btl-wrap-module{
+	padding-left:20px;
+	padding-bottom:20px;
+	padding-top:10px;
+	min-width:200px;
+}
+.bt-scroll{
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.bt-scroll .bt-scroll-inner{
+	padding-bottom:10px;
+}
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #eee;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #dadada;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+.btl-label label{
+	font-weight:bold;
+	margin-bottom:0;
+}

@@ -1,0 +1,407 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+
+// ----------
+// TITLE PAGE
+// ----------
+.page-heading {
+	background:url('../images/bg-re-titlepage_03.png') repeat-x bottom;
+	.heading-title {
+		margin:0 15px;
+		background:url('@{pathColor}icon-titlepage_03.png') no-repeat left bottom;
+		min-height:64px;
+		.title_page {
+			padding: 8px 0 24px 55px;
+			line-height: 32px;
+			font-family:@headingsFontFamily;
+			font-weight:@headingsFontWeight;
+			color:@headingsColor;
+			text-transform:@headingsTextTransform;
+			font-size:@headingFontSize;
+		}
+	}
+}
+
+// -------------
+// TITLE ARTICLE
+// -------------
+
+.article-title a {color:@titleColor;font-family:@headingsFontFamily;font-weight:normal;}
+
+
+.article-title a:hover {color:@linkColor;}
+
+.itembasicinfo {
+	.createdby span {
+		color:@linkColor;
+		font-weight:bold;
+	}
+
+}
+.items-more {
+	h3 {
+		font-size: 16px;
+		text-transform: uppercase;
+		color: @linkColor;
+		font-weight: normal;
+		border-bottom: 2px solid @linkColor;
+		line-height: normal;
+		padding-bottom: 8px;
+	}
+
+	li {
+		border-bottom: 1px solid #ebebeb;
+		background: url("../images/icon-li-itemauthorlatest.png") no-repeat left 12px;
+		padding: 0 0 0 17px;
+		line-height: 32px;
+		&:hover {
+			background: url("@{pathColor}icon-li-itemauthorlatest-hover-ltr.png") no-repeat left 12px;
+		}
+		a {
+			color:@textColor;
+			border:0 !important;
+			padding:0;
+			margin:0;
+			line-height:32px;			
+			&:hover {
+				color:@linkColor;
+				background:none;
+			}
+		}
+	}
+}
+
+// ----------
+// MODULE GALLERY
+// ----------
+.module_gallery {
+	.module-title {
+		border-bottom: 1px solid #eaeaea;
+		margin:0 -14px;
+		padding: 2px 14px 13px 14px;
+	}
+}
+
+// ----------------------
+// MODULE CONTENTSHOWCASE
+// ----------------------
+.btp-direction .preview,
+.btp-direction .next,
+.defaultLayout .btcontentshowcase-prev,
+.defaultLayout .btcontentshowcase-next {
+background-color: @linkColor !important;
+}
+
+.btp-direction .preview:hover,
+.btp-direction .next:hover,
+.defaultLayout .btcontentshowcase-prev:hover,
+.defaultLayout .btcontentshowcase-next:hover {
+background-color: @bgColorHover !important;
+}
+
+.module_last .defaultLayout .bt-inner a:hover img{	
+    box-shadow: 5px -5px 0px @linkColor;
+    -webkit-box-shadow: 5px -5px 0px @linkColor;
+    -moz-box-shadow: 5px -5px 0px @linkColor;	
+}
+.defaultLayout .bt-contentshowcase a:hover,
+.defaultLayout .bt-contentshowcase h3  span {color: @linkColor;}
+
+.defaultLayout .bt-inner .bt-introtext {
+	border-left: 2px solid @linkColor;
+}
+
+.defaultLayout  .swap-flanks .btcontentshowcase-prev{
+	background:url('@{pathColor}re-left2.png') #f9f9f9 center center no-repeat !important;
+}
+.defaultLayout  .swap-flanks .btcontentshowcase-next{
+	background:url('@{pathColor}re-right2.png') #f9f9f9 center center no-repeat !important;
+}
+
+.module_feature .defaultLayout .bt-inner a.bt-image-link {
+	border: 1px solid @borderColorImg !important;
+}
+
+// ---------------------
+// MODULE BTLOGIN SOCIAL
+// ---------------------
+#btl .btl-panel > span:hover{
+	background-color: @linkColor !important;
+}
+#bt_ul li:hover a,
+.btl-content-block h3,
+#btl-content-login #social-connect div {
+	color: @linkColor !important;
+}
+button.btl-buttonsubmit,input.btl-buttonsubmit{
+	background-color: @linkColor !important;
+}
+button.btl-buttonsubmit:hover,input.btl-buttonsubmit:hover,
+button.btl-buttonsubmit:focus,input.btl-buttonsubmit:focus{	
+	background-color: @bgColorHover !important;
+}
+
+#bt_ul li a {
+background: url('@{pathColor}icon-li-login-ltr.png') left 3px no-repeat;
+}
+
+
+.bt-twitter #twtr-widget-1 .twtr-tweet a {color: @linkColor !important;}
+
+// --------------
+// BTQuickContact
+// --------------
+.btqc-field-container input.button{
+	background:url('../images/botton-contact-ltr.png') @linkColor top left no-repeat !important;
+}
+
+// BACKGROUND SLIDESHOW
+#cp-caption .cp-title {
+  background:url('../images/bg-content-slider.png') top left;  
+  font-size: 26px;
+  font-weight: bold;
+  padding:12px;
+  border-left:4px solid @linkColor;
+}
+#cp-caption .cp-desc {
+  background:url('../images/bg-content-slider.png') top left;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 7px 15px 10px;
+  font-family:@headingsFontFamily;
+  border-left:4px solid @linkColor;
+}
+
+.t3-mainnav .navbar .nav > li > .dropdown-menu.mega-dropdown-menu{
+	border-top:5px solid @linkColor !important;
+}  
+
+// --------------------------
+// MODULE BT_PORTFOLIO FILTER
+// --------------------------
+
+.t3-module.module_portfolio_filter .module-title {
+	background: url('@{pathColor}bt-portfolio-filter.png') top right no-repeat;
+	width:250px;
+	cursor: pointer;
+	span{
+		color:#fff;
+		margin:0 47px 0 15px;
+		line-height:43px;
+		text-transform:uppercase;
+		font-size:18px;
+		text-shadow:0 -2px 1px @shadowColorFilter;
+	}
+}
+.filter-button{
+	background: url('@{pathColor}bt-portlio-search.png') top right no-repeat;
+	width:250px;
+	height:43px;
+	line-height:43px;
+	.button{
+		color:#fff;
+		width:240px;
+		margin:0 0px 0 15px;
+		text-transform:uppercase;
+		background:none;
+		border:none;
+		box-shadow:none;
+		padding:0;
+		font-size:18px;
+		text-shadow:0 -2px 1px @shadowColorFilter;
+		text-align:left;
+		font-weight: bold;
+	}
+}
+
+
+// ----------
+// PAGINATION
+// ----------
+.pagination {width: 100%;display: inline-block;margin-top: 0px; margin-bottom: 0;}
+.pagination ul {margin: 7px 7px 2px;float: left;box-shadow: none;}
+.pagination ul li.disabled a, .pagination ul li.disabled a:hover, ul.pagination-list li.disabled a:hover, ul.pagination-list li.disabled a:hover, ul.pagination-list li.disabled a:hover {color:#4b4b4b;padding:8px 4px;border:0;}
+.pagination ul.start li:first-child, .pagination ul.end li:first-child {background:url('../images/pc-paga.png') no-repeat right;}
+.pagination ul.start li a, .pagination ul.end li a {border:0;}
+.pagination ul.number li {background:none;display:inline;margin-right:5px;line-height:29px;float:left;}
+.pagination ul.number li a:link{background: url('../images/bg-pagina.png') no-repeat center center;color: #fff;text-align: center;padding: 8px 0;width: 29px;display: inline-block;border:0;}
+.pagination ul.number li a:hover{background:url('@{pathColor}bg-pagina-hover.png') no-repeat center center;color: #fff;text-align: center;padding: 8px 0;width: 29px;display: inline-block;border:0;}
+.pagination ul.number li.disabled  > a:hover, ul.pagination-list li.disabled  > a{background:url('@{pathColor}bg-pagina-hover.png') no-repeat center center;color: #fff;text-align: center;padding: 8px 0;width: 29px;border:0;}
+.pagination .counter{color: #676767;margin: 14px 12px; font-weight: bold;}
+// ----------
+// COLOR K2
+// ----------
+div.latestItemHeader h3.latestItemTitle a,
+div.itemListSubCategories h3 a,
+div.itemHeader h2.itemTitle,
+div.tagItemHeader h2.tagItemTitle a,
+div.userItemHeader h3.userItemTitle a,
+div.catItemHeader h3.catItemTitle a {color:@titleColor;}
+
+div.latestItemHeader h3.latestItemTitle a:hover,
+div.itemListSubCategories h3 a:hover,
+div.tagItemHeader h2.tagItemTitle a:hover,
+div.userItemHeader h3.userItemTitle a:hover,
+div.catItemHeader h3.catItemTitle a:hover {color:@linkColor;}
+
+
+div.itemExtraFields ul li span.itemExtraFieldsValue,
+div.itemTagsBlock ul.itemTags li a,
+div.itemAuthorLatest h3,
+div.itemAuthorLatest ul li a:hover,
+div.itemRelated h3,
+div.itemRelated ul li a:hover,
+.itemCommentsCounter,
+div.itemComments ul.itemCommentsList li span.commentLink a,
+div.itemCommentsForm h3,
+div.itemListCategory h2,
+.itembasicinfo a,
+div.catItemTagsBlock ul.catItemTags li a,
+div.catItemCommentsLink a:hover,
+div.userBlock h2,
+div.userItemTagsBlock ul.userItemTags li a,
+div.userItemCommentsLink a,
+div.latestItemsUser h2,
+div.latestItemTagsBlock ul.latestItemTags li a:hover,
+.k2AccountPage th.k2ProfileHeading,
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorUrl {color: @linkColor;}
+
+div.itemAuthorLatest h3,
+div.itemRelated h3,
+.itemCommentsCounter,
+div.itemCommentsForm h3,
+div.itemListCategory,
+div.userBlock,
+div.latestItemsUser {border-bottom: 2px solid @linkColor;}
+
+
+// ----------------
+// LI LASTE COMMENT
+// ----------------
+div.itemAuthorLatest ul li:hover,
+div.itemRelated ul li:hover {background: url("@{pathColor}icon-li-itemauthorlatest-hover-ltr.png") no-repeat left 12px;}
+
+// ------------
+// READ MORE K2
+// ------------
+div.latestItemReadMore, div.catItemReadMore, div.userItemReadMore, div.tagItemReadMore,
+.btp-submit-comment span,
+span.bt_buttom {
+	background: url("@{pathColor}read-more-l-ltr.png") no-repeat scroll left top transparent;
+}	
+	
+
+div.latestItemReadMore a, div.catItemReadMore a, div.userItemReadMore a, div.tagItemReadMore a,
+span.bt_buttom .button,
+.btp-submit-comment span button,
+div.itemCommentsForm form input:focus#submitCommentButton,div.itemCommentsForm form input:hover#submitCommentButton {
+	background: url("@{pathColor}read-more-r-ltr.png") no-repeat scroll right top transparent;
+}	
+
+
+// -------------
+// PAGINATION K2
+// -------------
+/* --- Pagination (additional styling for Joomla! 1.6+) --- */
+ul.pagination-list {margin: 0px 7px;float:left;text-align:center;}
+ul.pagination-list li {display:inline;margin-right:5px; margin-bottom:0px; line-height:24px;float:left;}
+ul.pagination-list li.disabled,
+ul.pagination-list li:hover {display:inline;margin-right:5px;line-height:24px;float:left;}
+ul.pagination-list li a{border: none; background: url('../images/bg-pagina.png') no-repeat center;color: #fff;text-align: center;padding: 8px 0;width: 29px;display: inline-block;}
+ul.pagination-list li a:hover{background:url('@{pathColor}bg-pagina-hover.png') no-repeat center center;color: #fff;text-align: center;padding: 8px 0;width: 29px;display: inline-block;}
+ul.pagination-list li.disabled  > a:hover, ul.pagination-list li.disabled  > a{background:url('@{pathColor}bg-pagina-hover.png') no-repeat center;color: #fff;text-align: center;padding: 8px 0;width: 29px;display: inline-block;}
+ul.pagination-list li.Start a, ul.pagination-list li.Prev a, ul.pagination-list li.Next a, ul.pagination-list li.End a,
+ul.pagination-list li.Start a:link, ul.pagination-list li.Prev a:link, ul.pagination-list li.Next a:link, ul.pagination-list li.End a:link {background:none;color:#4b4b4b;padding:8px 4px;}
+ul.pagination-list li.Start a:hover, ul.pagination-list li.Prev a:hover, ul.pagination-list li.Next a:hover, ul.pagination-list li.End a:hover {background:none;color:@linkColor;}
+ul.pagination-list li.Start.disabled a, 
+ul.pagination-list li.Start.disabled a:hover, ul.pagination-list li.Prev.disabled a:hover, ul.pagination-list li.Next.disabled a:hover, ul.pagination-list li.End.disabled a:hover {color:#4b4b4b;padding:8px 4px;background:none;}
+ul.pagination-list li.Start, ul.pagination-list li.Next {background:url('../images/pc-paga.png') no-repeat right;padding-right:18px;}
+div.k2Pagination .totalpage {float: right;color: #676767;margin: 10px 12px; font-weight: bold;}
+
+// TAMPT
+.btp-item-content-top{
+	border-left: 2px solid @linkColor;
+	height: 136px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.btp-detail .price .extrafield-value{
+	background-color: @linkColor;
+	font-family:@headingsFontFamily;
+}
+.review-form-title,
+h3.btp-comment-head{
+	border-bottom: 2px solid @linkColor;
+	color: @linkColor;
+}
+.btp-detail .extrafield-row-inner .extrafield-title,
+.comment-author{
+	color: @linkColor;
+}
+span.bt_buttom .button,
+.btp-submit-comment span button{
+	font-family:@headingsFontFamily;
+}
+.filter-button .button,
+.filter-description,
+.filter-label label{
+	font-family:@headingsFontFamily;
+}
+.price .extrafield-value,
+.extrafield-row td:first-child{
+	color: @linkColor;
+}
+
+// ICON SUBMENU
+.navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown > a:focus .caret {
+  border-bottom-color: @linkColor !important;
+  border-top-color: @linkColor !important;
+}
+.contentItemK2 .modal {
+  border: medium none;
+  box-shadow: none;
+  margin-left: 0;
+  position: static;
+  width: auto;
+}
+// User Menu
+#btl-content #btl-content-profile #module-in-profile ul.nav{
+	margin: 0; 
+}
+#btl-content #btl-content-profile #module-in-profile .nav li{
+	border-bottom: 1px solid #e4e4e4;
+	padding: 0 5px 0 19px;
+}
+#btl-content #btl-content-profile #module-in-profile .nav li a{
+	line-height: 24px;
+	padding: 6px 0;
+}
+#btl-content #btl-content-profile #module-in-profile .nav li.active a,
+#btl-content #btl-content-profile #module-in-profile .nav li a:hover{
+	background: none;
+	color: @linkColor;
+}
+#btl-content .btl-content-block form{
+	padding: 0;
+	margin: 0;
+}
+#btl-content-profile form{
+	border: none;
+}
+.bt-scroll .bt-scroll-inner{
+	padding: 0!important;
+}

@@ -1,0 +1,49 @@
+Changelog of BT Image Gallery
+This is a maintenance release. The following items were fixed and/or added:
+
+------------------------ version 1.1 --------------------------------------
+-- 02/20/2012 - Bowthemes - Add feature upload images from local computer by flash uploader
+-- 02/22/2012 - Bowthemes - Fix bug Unable to close Joom Gallery section in module config for Joomla 1.5
+-- 02/22/2012 - Bowthemes - Add feature display warning for the unwritalbe folder and user lost session.
+------------------------ version 1.2 --------------------------------------
+-- 03/05/2012 - Bowthemes - Add feature auto sync images with image source after sync interval and 2 mode:
+                                - only insert new images
+                                - insert new images and delete images which don't exist in the source.
+------------------------ version 1.3 --------------------------------------
+-- 03/09/2012 - Bowthemes - W3C markup validated
+------------------------ version 1.4 --------------------------------------
+-- 03/13/2012 - Bowthemes - Fig bug: raise warning if folder "images" of the module isn't writable and file "ajax.php" isn't at 0755 mode
+
+------------------------ version 1.5 --------------------------------------
+-- 08/16/2012 - Bowthemes - Fig bug: Change structure of the module to fix ajax error, impossible to create folders
+-- 08/17/2012 - Bowthemes - Remove Feed title option
+-- 08/23/2012 - Bowthemes - Add feature: Responsive Mode. This featured is applied to Responsive Website. Followed params: thumbnail width, thumbnail height and item per page
+-- 08/23/2012 - Bowthemes - Change label of Bullet X-coordinate and Y-coordinate to Top position and Left position
+------------------------ version 1.5.1 --------------------------------------
+-- 09/14/2012 - Bowthemes - Fix bug: Delete all with many modules
+------------------------ version 1.5.2 --------------------------------------
+-- 09/15/2012 - Bowthemes - Added 3 params: Interval, Animation Duration and Pause Hover.
+-- 09/17/2012 - Bowthemes - Fixed bug: 404 Not Found - http://localhost/img/loading.gif
+-- 10/12/2012 - Bowthemes - Changed the responsive method
+-- 10/12/2012 - Bowthemes - 504 Gateway Timeout in some hostings
+-- 10/17/2012 - Bowthemes - Black images are created when click "Save and Close" instead of "Save"
+------------------------ version 2.0.0 --------------------------------------
+-- 11/09/2012 - Bowthemes - Fixed: Check lowercase for image extensions
+-- 01/19/2013 - Bowthemes - touch screen
+-- 02/21/2013 - Bowthemes - support joomla 3.0
+------------------------ version 2.1.0 --------------------------------------
+-- 03/05/2013 - Bowthemes - Added embed youtube video 
+-- 03/11/2013 - Bowthemes - Fancybox slideshow
+------------------------ version 2.1.1 --------------------------------------
+-- 03/20/2013 - Bowthemes - Fix bug. When save as copy a module, 2 modules will use same images. 
+							When user delete images from a module, other one will be error , it's can't not show images.
+------------------------ version 2.1.2 --------------------------------------
+-- 04/01/2013 - Bowthemes - Fixed Bug: Error about Phoca gallery Category on Joomla 3.0
+			  - Changed: Use cURL instead of file_get_contents\
+                          - Added: get Youtube video directly from url link/playlist link.
+			  - Added: Keep remote URL of images from source as original image.
+-- 05/16/2013 - Bowthemes - Fixed Bug: don't save photoset flickr and album picasa 
+------------------------ version 2.1.3 --------------------------------------
+-- 10/29/2013 - Bowthemes - Automatic RTL support
+------------------------ version 2.1.4 --------------------------------------
+-- 10/11/2013 - Bowthemes - Upgrade to suit Joomla 3.2

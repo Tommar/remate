@@ -1,0 +1,218 @@
+.mod_btquickcontact{
+    text-align: left;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.mod_btquickcontact_module{
+    border: 1px solid #e3e3e3;
+}
+.btqc-field-container{
+    margin-bottom: 8px;
+    min-height: 25px;
+    padding: 0px 15px;
+    min-width: 480px;
+    line-height: 25px;
+    clear: left;
+}
+.btqc-field-container label{ 
+    display: block;
+    width: 150px;
+    font-size: 12px; color: #505050;
+    float: left;
+    text-align: left;
+}
+.btqc-field-container input[type=text],
+.btqc-field-container textarea{
+    border: 1px solid #a6a6a6;
+    font-size: 12px; color: #505050;
+}
+.btqc-field-container input[type=text]{
+    background:  url(../images/btqc_input_bg.png) repeat-x;
+    height: 24px;
+    margin-right: 3px;
+    float: left;
+    padding: 0px 0px 0px 3px;
+}
+.btqc-field-container select{
+    min-width: 120px;
+}
+.btqc-field-container.error{
+    color: #f20000;
+}
+.btqc-field-container .btqc-fc-wrapper{
+    float: left;
+}
+.btqc-field-container .styled-select{
+    background:  url(../images/btqc_input_bg.png) repeat-x;
+    width: 240px;
+    height: 26px;
+    overflow: hidden;
+    border: 1px solid #a6a6a6;
+}
+.btqc-field-container .styled-select .style-selected-button{
+    background: url(../images/select_arrow.png) no-repeat right;
+    height: 26px;
+}
+.btqc-field-container .styled-select select{
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    border:none;
+    height: 26px;
+}
+.btqc-field-container .error{
+    color: #e20000;
+    margin: 0 !important;
+}
+.btqc-field-container input.error,
+.btqc-field-container textarea.error{
+    border: 1px solid #e20000;
+}
+.btqc-field-container input.button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 22px;
+}
+.btqc-field-container span{
+    padding: 0 3px;
+}
+.btqc-field-container td{
+    padding: 2px 5px 2px 0px;
+	border: none;
+}
+.btqc-field-captcha div{
+    float: left;
+}
+.btqc-input-file{
+    float: left;
+    position: relative;
+    width: 245px;
+}
+
+.btqc-input-file input[type='file']{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    height: 30px;
+    width: 165px;
+    padding: 0 !important;
+}
+.btqc-input-file .btqc-fake-file{
+    position: relative;
+    z-index: 1;
+}
+.btqc-input-file .btqc-fake-file input{
+    background: none;
+}
+
+.btqc-input-file .btqc-fake-file .btqc-upload{
+    background: url(../images/button_small.png) no-repeat;
+    width: 67px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+    color: #ffffff;
+    margin-top: 0px !important;
+    float: none;
+    cursor: pointer;
+}
+.btqc-message-container,
+.btqc-message-loading{
+    padding: 5px 15px;
+    list-style: none !important;
+    display: none;
+}
+.btqc-message-container li,
+.btqc-message-loading li{
+    border: 1px solid #e59c9c;
+    background: #fff4f4 url(../images/error.png) 10px center no-repeat;
+    height: 35px;
+    line-height: 35px;
+    font-size: 11px; color: #e20000;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.btqc-message-container li.success{
+    border: 1px solid #448700;
+    background: #e8eed5 url(../images/success.png) 10px center no-repeat;
+    color: #448700;
+}
+.btqc-message-loading li.loading{
+    border: 1px solid #448700;
+    background: #e8eed5 url(../images/loading.gif) 10px center no-repeat;
+    color: #030303;
+
+}
+.btqc-float-button{
+    width: 100px; height: 40px; 
+    background: url(../images/feedback.png) no-repeat;
+    position: fixed;
+    top: 48%; right:0px;
+    z-index:200;
+    text-transform: uppercase;
+    text-align: center;
+    
+
+}
+.btqc-float-button a{
+    color: #ffffff !important; font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+}
+.btqc-float-button a:hover{
+    text-decoration: none;
+    background: none !important;
+}
+.btqc-title{
+    background: #fbfbfb;
+    border-bottom: 1px solid #dedede;
+    height: 40px;
+    border-top-left-radius: 5px; border-top-right-radius: 5px;
+    margin-bottom: 5px;
+}
+.btqc-title h3{
+    padding: 0 0 0 15px !important;
+    margin: 0! important;
+    line-height: 40px; 
+    text-align: left;
+    font-size: 14px;
+}
+.btqc-progressbar-container{
+    border: 1px solid #efefef;
+    background: #f6f6f6;
+    height: 6px;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.btqc-progressbar{
+    height:6px;
+    background: #aaaaaa;
+    border-radius: 6px;
+}
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $
+*/
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+
+/* Container */
+#simplemodal-container {background-color:#ffffff; border:1px solid #444; border-radius: 5px;}
+#simplemodal-container .simplemodal-data {padding:0px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../images/x.png) no-repeat; width:20px; height:20px; display:inline; z-index:3200; position:absolute; top:10px; right:10px; cursor:pointer;}

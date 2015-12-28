@@ -1,0 +1,299 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t3/base/less/megamenu.less";
+
+
+// BASIC STYLE FOR MEGAMENU
+// -------------------------
+.t3-megamenu {
+
+  // THE MEGAMENU
+  //--------------------------------------------
+	
+  // Global Menu Inner padding
+  // -------------------------
+  .mega-inner {
+    padding: 12px 24px;
+  }
+
+  // Inner Padding for 1 column
+  .span12 .mega-inner {
+  }
+
+
+  // Menu Grids
+  // ----------
+  .row-fluid {
+  }
+
+  .row-fluid + .row-fluid  {
+    border-top: 1px solid @T3borderColor;
+  }
+
+  .row-fluid [class*="span"] {
+  }
+
+
+  // The Dropdown
+  // ------------
+  .mega-dropdown-menu {
+  }
+
+
+  // The Group
+  // ---------
+  .mega-group {
+  }
+
+  // Group Title
+  .mega-nav .mega-group > .mega-group-title,
+  .dropdown-menu .mega-nav .mega-group > .mega-group-title,
+  .dropdown-menu .active .mega-nav .mega-group > .mega-group-title {
+    background: inherit;
+    font-size: 15px;
+    font-weight: bold;
+	font-family:@headingsFontFamily;
+	text-transform: uppercase;
+	border-bottom:1px solid #565553;
+    margin-bottom: 0;
+	padding:5px 0;
+	width:100%;
+	display:inline-block;
+    &:hover, &:active, &:focus {
+      background: inherit;
+      color: @white;
+    }
+  }
+
+  // Group Content
+  .mega-group-ct {
+  }
+
+  .mega-group-ct > .row-fluid > [class*="span"] > .mega-inner {
+  }
+
+
+  // Nav in Megamenu
+  // ---------------
+  .mega-col-nav {
+  }
+
+  // Inner padding
+  .mega-col-nav .mega-inner {
+  }
+
+  // Inner padding for nav in 1 column
+  .span12.mega-col-nav .mega-inner {
+  }
+
+  // The Nav
+  .mega-nav,
+  .dropdown-menu .mega-nav {
+  }
+
+  .mega-nav > li,
+  .dropdown-menu .mega-nav > li {
+  }
+
+  .mega-nav > li a,
+  .dropdown-menu .mega-nav > li a {
+    padding: 5px ( @T3globalPadding / 2 );
+  }
+
+  // Nav in Group
+  .mega-group > .mega-nav,
+  .dropdown-menu .mega-group > .mega-nav {
+  }
+
+  .mega-group > .mega-nav > li,
+  .dropdown-menu .mega-group > .mega-nav > li {
+  }
+
+  .mega-group .mega-nav > li a,
+  .dropdown-menu .mega-group .mega-nav > li a {
+  }
+
+  // The caret
+  .mega-nav .dropdown-submenu > a::after {
+    margin-right: 0;
+  }
+
+
+  // Modules in Megamenu
+  // -------------------
+  .mega-col-module {
+  }
+
+  // Inner padding
+  .mega-col-module .mega-inner {
+  }
+
+  // Inner padding for module in 1 column
+  .span12.mega-col-nav .mega-inner {
+  }
+
+
+
+  // Module Content
+  .t3-module .module-ct {
+  }
+    // Module Title
+  .t3-module .module-title {
+    background: inherit;
+	border-bottom: 1px solid #565553;
+	font-family: @headingsFontFamily;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 18px;
+	padding: 5px 0;
+	line-height:24px;
+	text-transform: uppercase;
+
+  }
+  // List in Module
+  // Reset List Style in Module
+  .t3-module ul,
+  .t3-module .nav {
+    margin: 0 0 0 15px;
+  }
+
+  .t3-module ul li,
+  .t3-module .nav li {
+    list-style: disc;
+    display: list-item;
+    float: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .t3-module ul li a,
+  .t3-module .nav li a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    background: none;
+    font: inherit;
+    white-space: normal;
+    // Link states
+    &:hover, &:focus, &:active {
+      background: none;
+      color: inherit;
+      font: inherit;
+    }
+  }
+  
+  // Nav in Module
+  .dropdown-menu .t3-module .nav {
+  }
+
+  .dropdown-menu .t3-module .nav li {
+  }
+
+  .dropdown-menu .t3-module .t3-module li a {
+    // Link states
+    &:hover, &:focus, &:active {
+    }
+  }
+  
+
+  // End
+}
+
+
+
+//  MEGAMENU (Inverted)
+// -------------------------------------------------------
+
+.T3Navbar() when (@T3NavbarInverted = 1) {
+
+  // The Group
+  // ---------
+  // Group Title
+  .mega-nav .mega-group > span,
+  .dropdown-menu .mega-nav .mega-group > span {
+    color: @white;
+    // Link states
+    &:hover, &:active, &:focus {
+      color: @white;
+    }
+  }
+
+  // Modules in Megamenu
+  // -------------------
+  // Module Title
+  .t3-module .module-title {
+    color: @white;
+  }
+
+  // End Mixin
+}
+
+.T3Navbar() when (@T3NavbarInverted = 0) {
+  // Leave blank here because we will use the default style.
+}
+
+// Calling the styles
+.t3-megamenu {
+  .T3Navbar();
+}
+
+.t3-mainnav .navbar .nav > li > .dropdown-menu.mega-dropdown-menu{
+	background:url('../images/bg-megamenu.png') top left;
+	border-radius:0;
+	border-left:0 !important;
+	border-bottom:0 !important;
+	border-right:0 !important;
+	border-top:5px solid @linkColor;
+}
+.t3-mainnav .dropdown-menu li > a:hover{
+	color:@linkColor;
+}
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+  border-bottom-color: #fff;
+  border-top-color: #fff;
+}
+.navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown > a:focus .caret {
+  border-bottom-color: @linkColor;
+  border-top-color: @linkColor;
+}
+.t3-mainnav .dropdown-menu .color li > a{
+	background:none;
+	padding-left:0;
+	&:hover{
+		background:none;
+	}
+	img{
+		padding-right:8px;
+	}
+}
+.t3-megamenu .mega-col-nav .span12.mega-col-nav:first-child .mega-inner, .t3-megamenu .mega-col-nav .span12.mega-col-module:first-child .mega-inner{
+	padding:5px 0;
+}
+.t3-megamenu .span12.mega-col-nav:first-child .mega-inner, .t3-megamenu .span12.mega-col-module:first-child .mega-inner{
+	padding:12px;
+}
+.t3-megamenu .mega-nav .mega-group > span.mega-group-title:hover, .t3-megamenu .mega-nav .mega-group > span.mega-group-title:active, .t3-megamenu .mega-nav .mega-group > span.mega-group-title:focus, .t3-megamenu .dropdown-menu .mega-nav .mega-group > span.mega-group-title:hover, .t3-megamenu .dropdown-menu .mega-nav .mega-group > span.mega-group-title:active, .t3-megamenu .dropdown-menu .mega-nav .mega-group > span.mega-group-title:focus, .t3-megamenu .dropdown-menu .active .mega-nav .mega-group > span.mega-group-title:hover, .t3-megamenu .dropdown-menu .active .mega-nav .mega-group > span.mega-group-title:active, .t3-megamenu .dropdown-menu .active .mega-nav .mega-group > span.mega-group-title:focus{
+
+}

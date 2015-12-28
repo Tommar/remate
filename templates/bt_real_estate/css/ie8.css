@@ -1,0 +1,12 @@
+img{
+	max-width:auto !important;
+	width:auto !important;
+	height:auto !important;
+}
+.module_feature .defaultLayout .bt-inner a.bt-image-link{
+	display:inline-block;
+	width:95%;
+}
+.module_feature .defaultLayout .bt-inner a.bt-image-link img {
+  width: auto !important;  
+}
